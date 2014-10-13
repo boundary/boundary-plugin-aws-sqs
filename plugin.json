@@ -1,0 +1,38 @@
+{
+    "description": "Monitors AWS SQS Queues",
+    "command": "python -u sqs_plugin.py",
+    "icon" : "icon.png",
+    "metrics" : [
+	"AWS_SQS_NUMBER_OF_MESSAGES_SENT",
+	"AWS_SQS_SENT_MESSAGE_SIZE",
+	"AWS_SQS_NUMBER_OF_MESSAGES_RECEIVED",
+	"AWS_SQS_NUMBER_OF_EMPTY_RECEIVES",
+	"AWS_SQS_NUMBER_OF_MESSAGES_DELETED",
+	"AWS_SQS_NUMBER_OF_MESSAGES_DELAYED",
+	"AWS_SQS_NUMBER_OF_MESSAGES_VISIBLE",
+	"AWS_SQS_NUMBER_OF_MESSAGES_NOT_VISIBLE"],
+
+    "dashboards" : [{"name" : "AWS SQS",
+        "layout" : 
+"d-w=4&d-h=4&d-pad=5&d-bg=none&d-g-AWS_SQS_NUMBER_OF_MESSAGES_VISIBLE=0-0-2-2-t&d-g-AWS_SQS_NUMBER_OF_MESSAGES_NOT_VISIBLE=0-0-2-2-b&d-g-AWS_SQS_NUMBER_OF_MESSAGES_SENT=2-0-2-2-t&d-g-AWS_SQS_NUMBER_OF_MESSAGES_RECEIVED=2-0-2-2-b&d-g-AWS_SQS_NUMBER_OF_MESSAGES_DELETED=0-2-2-1&d-g-AWS_SQS_NUMBER_OF_EMPTY_RECEIVES=0-3-2-1&d-g-AWS_SQS_SENT_MESSAGE_SIZE=2-2-2-1&d-g-AWS_SQS_NUMBER_OF_MESSAGES_DELAYED=2-3-2-1" }],
+
+    "paramSchema": [
+        {
+            "title": "AWS Access Key Id",
+            "name": "access_key_id",
+            "description": "Access Key for AWS",
+            "type": "string",
+            "default": "",
+            "required": true
+        },
+        {
+            "title": "AWS Secret Key",
+            "name": "secret_key",
+            "description": "Secret Key for AWS",
+            "type": "string",
+            "default": "",
+            "required": true
+        }
+    ]
+}
+
