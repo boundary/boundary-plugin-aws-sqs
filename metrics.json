@@ -1,21 +1,11 @@
 {
     "result": [
         {
-            "defaultAggregate": "AVG",
+            "defaultAggregate": "SUM",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
-            "isDisabled": 0,
-            "name": "AWS_SQS",
-            "unit": "number"
-        },
-        {
-            "defaultAggregate": "AVG",
-            "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "The number of messages added to a queue",
+            "displayName": "AWS SQS - Number Of Messages Sent",
+            "displayNameShort": "AWS SQS - # Msg Sent",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_MESSAGES_SENT",
             "unit": "number"
@@ -23,9 +13,9 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "The number of messages returned by calls to the ReceiveMessage API action",
+            "displayName": "AWS SQS - Number Of Messages Received",
+            "displayNameShort": "AWS SQS - # Msg Recv",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_MESSAGES_RECEIVED",
             "unit": "number"
@@ -33,9 +23,9 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "The number of ReceiveMessage API calls that did not return a message",
+            "displayName": "AWS EBS - Number Of Empty Receives",
+            "displayNameShort": "AWS SQS - # Emp Recv",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_EMPTY_RECEIVES",
             "unit": "number"
@@ -43,9 +33,9 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "The number of messages deleted from the queue",
+            "displayName": "AWS SQS - Number Of Messages Deleted",
+            "displayNameShort": "AWS SQS - # Msg Del",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_MESSAGES_DELETED",
             "unit": "number"
@@ -53,9 +43,9 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "The number of messages in the queue that are delayed and not available for reading immediately. This can happen when the queue is configured as a delay queue or when a message has been sent with a delay parameter",
+            "displayName": "AWS SQS - Number Of Messages Delayed",
+            "displayNameShort": "AWS SQS - # Msg Delay",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_MESSAGES_DELAYED",
             "unit": "number"
@@ -63,9 +53,9 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "The number of messages available for retrieval from the queue",
+            "displayName": "AWS SQS - Number Of Messages Visible",
+            "displayNameShort": "AWS SQS - # Msg Vis",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_MESSAGES_VISIBLE",
             "unit": "number"
@@ -73,9 +63,9 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
-            "description": "The number of read and write operation requests waiting to be completed in a specified period of time.",
-            "displayName": "AWS EBS - Volume Queue Length",
-            "displayNameShort": "AWS EBS - Q Length",
+            "description": "",
+            "displayName": "AWS SQS - Number Of Messages Not Visible",
+            "displayNameShort": "AWS SQS - # Msg NVis",
             "isDisabled": 0,
             "name": "AWS_SQS_NUMBER_OF_MESSAGES_NOT_VISIBLE",
             "unit": "number"
