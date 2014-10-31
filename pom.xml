@@ -6,7 +6,7 @@
   <artifactId>boundary-plugin-aws-sqs</artifactId>
   <packaging>jar</packaging>
   <version>01.00.00</version>
-  <name>boundary_plugin_aws_rds</name>
+  <name>boundary_plugin_aws_sqs</name>
   <description>Boundary Plugin AWS SQS collects metrics from AWS Cloud Watch for AWS SQS (Simple Queing Service)</description>
   <url>https://github.com/boundary/boundary-plugin-aws-sqs</url>
   <properties>
