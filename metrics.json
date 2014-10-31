@@ -13,11 +13,21 @@
         {
             "defaultAggregate": "AVG",
             "defaultResolutionMS": 60000,
+            "description": "The size of messages added to a queue.",
+            "displayName": "AWS SQS - Sent Message Size",
+            "displayNameShort": "AWS SQS - Msg Size",
+            "isDisabled": 0,
+            "name": "AWS_SQS_SENT_MESSAGE_SIZE",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "AVG",
+            "defaultResolutionMS": 60000,
             "description": "The number of messages returned by calls to the ReceiveMessage API action",
             "displayName": "AWS SQS - Number Of Messages Received",
             "displayNameShort": "AWS SQS - # Msg Recv",
             "isDisabled": 0,
-            "name": "AWS_SQS_NUMBER_OF_MESSAGES_RECEIVED",
+            "name": "AWS_SQS_SENT_MESSAGE_SIZE",
             "unit": "number"
         },
         {
