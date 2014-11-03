@@ -1,5 +1,5 @@
 {
-    "description": "Monitors AWS SQS Queues",
+    "description": "Awaiting Certification - Monitors AWS SQS Queues",
     "command": "python -u sqs_plugin.py",
     "icon" : "icon.png",
     "metrics" : [
